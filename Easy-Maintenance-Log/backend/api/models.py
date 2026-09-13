@@ -11,7 +11,7 @@ class Car(models.Model):
     def __str__(self):
         return self.descriptor
 
-class service(models.Model):
+class Service(models.Model):
     car = models.ForeignKey(Car, on_delete=models.CASCADE, related_name='service')
 
     title = models.CharField(max_length=200)
