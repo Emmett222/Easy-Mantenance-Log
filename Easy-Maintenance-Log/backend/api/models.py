@@ -18,6 +18,7 @@ class Service(models.Model):
     description = models.TextField(blank=True)
     milage = models.IntegerField(blank=True)
     date = models.DateField(auto_now_add=True, blank=True)
+    cost = models.FloatField(blank=True)
 
     next_milage = models.IntegerField(blank=True)
     next_time = models.IntegerField(blank=True)
