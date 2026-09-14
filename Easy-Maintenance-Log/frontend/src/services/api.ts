@@ -22,4 +22,9 @@ api.interceptors.request.use(
   }
 );
 
+export const registerUser = async (userData: Record<string, string>) => {
+    const response = await api.post('/register/', userData);
+    return response.data;
+}
+
 export default api;
